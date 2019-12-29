@@ -28,7 +28,7 @@
                         </div>
                     </div>
 				<?php } else { ?>
-					<h5><?php esc_html_e( 'Posts not found', 'cgs-travel-agency' ); ?></h5>
+					<h5><?php esc_html_e( 'یافت نشد', 'cgs-travel-agency' ); ?></h5>
 					<?php get_search_form(); ?>
 				<?php } ?>
 			</div>

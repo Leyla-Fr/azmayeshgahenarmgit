@@ -1,14 +1,11 @@
 <?php
-/* ==========================================================================
- *  Theme settings
- * ========================================================================== */
-if ( ! function_exists( 'cgs_travel_agency_setup' ) ) :
+if ( ! function_exists( 'travel_setup' ) ) :
 	function cgs_travel_agency_setup() {
 		if ( ! isset( $content_width ) ) {
 			$content_width = 725;
 		}
 
-		load_theme_textdomain( 'cgs-travel-agency', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'travel', get_template_directory() . '/languages' );
 
 		add_theme_support( 'woocommerce' );
 		add_theme_support( 'bbpress' );
@@ -85,7 +82,7 @@ add_action( 'admin_init', 'cgs_travel_agency_add_editor_styles' );
 function cgs_travel_agency_add_editor_styles() {
 	add_editor_style('editor-style.css');
 }
-define('cgs_travel_agency_THEME_LINK','https://www.cgsthemes.com/product/free-travel-agency/');
+define('cgs_travel_agency_THEME_LINK','');
 define('cgs_travel_agency_SITE_NAME',get_bloginfo( 'name'));
 function cgs_travel_agency_custom_css() {
 	?>

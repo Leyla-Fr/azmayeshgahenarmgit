@@ -9,7 +9,7 @@
 							<div class="col-lg-12 matchheight2">
 								<div class="sing_post">
                                     <?php if(has_post_thumbnail()){ ?>
-									<div class="post_img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('blog-thumb'); ?></a></div>
+									<div class="post_img"><a href="<?php the_permalink(); ?>"><?php                                                            the_post_thumbnail('blog-thumb'); ?></a></div>
                                     <?php } ?>
 									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 									<?php the_excerpt(); ?>
